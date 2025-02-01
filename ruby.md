@@ -370,3 +370,17 @@ class UsersController < ApplicationController
 end
 
 ```
+```
+<div class="main user-show">
+  <div class="container">
+    <div class="user">
+      <img src="<%= "/user_images/#{@user.image_name}" %>">
+      <h2><%= @user.name %></h2>
+      <p><%= @user.email %></p>
+      <!-- @userのidとLog Inしているユーザーのidが等しい場合のみ、以下のリンクを表示してください -->
+      <% if @user.id == @current_user.id %>
+      <%= link_to("編集", "/users/#{@user.id}/edit") %>
+    </div>
+  </div>
+</div>
+```
