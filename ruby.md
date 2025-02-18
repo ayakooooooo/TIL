@@ -862,3 +862,30 @@ class PostsController < ApplicationController
   
 end
 ```
+```
+<div class="main posts-show">
+  <div class="container">
+    <div class="posts-show-item">
+      <!--指定されたコードを貼り付けてください-->
+      <div class="post-user-name">
+        <!-- ユーザーの画像が表示されるように、以下のsrcの中を埋めてください -->
+        <img src="<%= "/user_images/#{@user.image_name}" %>">
+        
+        <!-- link_toメソッドを用いて、ユーザー詳細ページへのリンクを作成してください -->
+        <%=link_to(@user.name,"/users/#{@user.id}")%>
+      </div>
+      
+      <p>
+        <%= @post.content %>
+      </p>
+      <div class="post-time">
+        <%= @post.created_at %>
+      </div>
+      <div class="post-menus">
+        <%= link_to("編集", "/posts/#{@post.id}/edit") %>
+        <%= link_to("削除", "/posts/#{@post.id}/destroy", {method: "post"}) %>
+      </div>
+    </div>
+  </div>
+</div>
+```
