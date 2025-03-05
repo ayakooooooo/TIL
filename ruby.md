@@ -1071,7 +1071,12 @@ class PostsController < ApplicationController
   flash[:notice] = "権限がありません"
       redirect_to("/posts/index")
 end
-  
+ ```
+class Like < ApplicationRecord
+  validates:user_id,{presence:ture}
+  validates:post_id,{presence:ture}
+end
+``` 
   
 end
 ```
