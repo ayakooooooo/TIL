@@ -1392,3 +1392,19 @@ Param.substring(1) で、最初の & を削除が必要な理由
 
 そのため、最初の & を削除し、正しい形式にするのがベストプラクティス！   
 ```
+```
+class User < ApplicationRecord
+  # has_secure_passwordメソッドを追加してください
+  has_secure_password
+  
+  validates :name, {presence: true}
+  validates :email, {presence: true, uniqueness: true}
+  # 以下のバリデーションを削除してください
+ 
+  
+  def posts
+    return Post.where(user_id: self.id)
+  end
+  
+end
+```
