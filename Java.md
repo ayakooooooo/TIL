@@ -157,6 +157,7 @@ class Person {
 middleNameを引数に受け取らないものと、受け取るもの、2つのコンストラクタを定義  
 Javaは渡された引数に合わせて適切なコンストラクタを自動で呼び出し  
 ```
+､､､
 class Person {
   public static int count = 0;
   public String firstName;
