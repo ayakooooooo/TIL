@@ -1541,3 +1541,27 @@ end
   </div>
 </div>
 ```
+```
+<div class="main posts-show">
+  <div class="container">
+    <div class="posts-show-item">
+      <div class="post-user-name">
+  <img src="<%= "/user_images/#{@user.image_name}" %>">
+  <%= link_to(@user.name, "/users/#{@user.id}") %>
+  </div>
+      <p>
+        <%= @post.content %>
+      </p>
+      <div class="post-time">
+        <%= @post.created_at %>
+      </div>
+      <% if @post.user_id == @current_user.id %>
+      <div class="post-menus">
+        <%= link_to("編集", "/posts/#{@post.id}/edit") %>
+        <%= link_to("削除", "/posts/#{@post.id}/destroy", {method: "post"}) %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+```
