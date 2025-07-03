@@ -36,3 +36,16 @@ $(function() {
 ```
   <script>https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js</script>
 ```
+```
+$(function() {
+  $('#login-show').click(function() {
+    $('#login-modal').fadeIn();
+  });
+  
+  // 「.signup-show」のclickイベントを作成してください
+    $('#signup-show').click(function() {
+    $('#signup-modal').fadeIn();
+  });
+  
+});
+```
