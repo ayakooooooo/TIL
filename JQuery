@@ -140,3 +140,14 @@ $('.faq-list-item').click(function() {
 質問の右にある「-」記号は「+」記号に書き換え  
 反対にif文がfalseの時は、答えをslideDownメソッドで表示し  
 「+」記号は「-」に書き換え  
+```
+$(function() {
+  // 「#login-show」要素に対するclickイベントを作成してください
+  $('#login-show').click(function(){
+   $('#login-modal').fadeIn(); 
+  });
+   $('#close-modal').click(function() {            
+   $('#signup-modal').fadeOut();            
+    });
+});
+```
