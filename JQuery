@@ -370,3 +370,11 @@ $('.social-icon').hover(
     $('html, body').scrollTop(0); 
   });
 ```
+```
+    // animateメソッドを用いて、
+    // アニメーション付きでスクロールするようにしてください。
+    $('html, body').animate({
+      'scrollTop':0
+    },500);
+  });
+```
