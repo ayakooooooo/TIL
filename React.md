@@ -11,3 +11,5 @@ class App extends React.Component {
 
 export default App;
 ```
+<div>タグで囲んで、1つの要素に  
+```
