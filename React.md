@@ -49,3 +49,6 @@ return (
 }
 export default App;
 ```
+```
+イベント名={() => { 処理 }}
+```
