@@ -196,3 +196,8 @@ import App from './components/App';
 // 以下に指定されたコードを貼り付けてください 
 ReactDOM.render(<App />, document.getElementById('root'));
 ```
+```
+コンポーネントは「部品」や「パーツ」という意味です。  
+Reactでは、見た目を機能ごとにコンポーネント化して、  
+コンポーネントを組み合わせることでWebサイトの見た目を作ります。  
+```
