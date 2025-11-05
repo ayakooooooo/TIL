@@ -201,3 +201,25 @@ ReactDOM.render(<App />, document.getElementById('root'));
 Reactでは、見た目を機能ごとにコンポーネント化して、  
 コンポーネントを組み合わせることでWebサイトの見た目を作ります。  
 ```
+```
+import React from 'react';
+// Languageコンポーネントをインポートしてください
+import Language from './Language'
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>言語一覧</h1>
+        <div className="language">
+          {/* Languageコンポーネントを呼び出してください */}
+          <Language />
+          
+        </div>
+      </div>
+    );
+  }
+}
+
+export default App;
+```
