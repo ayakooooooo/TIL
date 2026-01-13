@@ -1,2 +1,18 @@
 Node.jsはJavaScriptを使ってサーバーサイド開発を行えるように設計された実行環境  
 list-app $ npm install express  
+```
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.render('hello.ejs');
+});
+
+// トップ画面を表示するルーティングを作成してください
+app.get('/top', (req, res) => {
+  res.render('top.ejs');
+});
+
+
+app.listen(3000);
+```
