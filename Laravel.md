@@ -172,3 +172,6 @@ composer create-project laravel/laravel laravel-form
 ✅ マイグレーションが自動実行された（SQLiteで）
 ✅ エラーなし、セキュリティ問題なし
 ```
+```
+SQLiteからMySQLに切り替えたことで、より実践的な環境に
+```
