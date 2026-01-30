@@ -165,3 +165,10 @@ Blade（画面）
 cd ~/Sites/localhost
 composer create-project laravel/laravel laravel-form
 ```
+```
+✅ Laravel 12.49.0（最新版）がインストールされた
+✅ 依存パッケージ111個が正常にインストール
+✅ アプリケーションキーが生成された
+✅ マイグレーションが自動実行された（SQLiteで）
+✅ エラーなし、セキュリティ問題なし
+```
