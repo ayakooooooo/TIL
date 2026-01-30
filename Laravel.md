@@ -161,3 +161,7 @@ Blade（画面）
 セッション管理
 👉 「認証の土台」全部
 ```
+```
+cd ~/Sites/localhost
+composer create-project laravel/laravel laravel-form
+```
