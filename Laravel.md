@@ -175,3 +175,8 @@ composer create-project laravel/laravel laravel-form
 ```
 SQLiteからMySQLに切り替えたことで、より実践的な環境に
 ```
+```
+Breezeインストール  
+セットアップ  
+Nodeなくてエラー  
+```
