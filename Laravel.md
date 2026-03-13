@@ -247,5 +247,9 @@ Nodeインストール
 ステップ48：マイグレーション実行
 ステップ49：部屋編集画面に定員を変更できる入力欄を追加
 ステップ50：コントローラーのupdateRoomメソッドにcapacityを追加
-ステップ51
+ステップ50：コントローラーのupdateRoomメソッドにcapacityを追加（途中）	
+ステップ51：部屋追加画面（create.blade.php）にもcapacityの入力欄を追加	
+ステップ52：コントローラーのstoreRoomメソッドにもcapacityを追加	
+ステップ53：部屋一覧画面に定員を表示	
+ステップ54：動作確認❌　Room モデルの $fillable に capacity 追加
 ```
