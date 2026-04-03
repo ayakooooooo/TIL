@@ -291,3 +291,10 @@ overflow
 　　・add_capacity_to_rooms_table  
 　　・add_check_out_date_to_bookings_table
 ```
+```
+ステップ６：php artisan migrate でテーブル作成
+ステップ７：モデルの修正
+ステップ８：コントローラーの修正
+ステップ９：管理者用のコントローラーを修正
+ステップ１０：routes/web.php の修正
+```
