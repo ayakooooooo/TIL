@@ -298,3 +298,27 @@ overflow
 ステップ９：管理者用のコントローラーを修正
 ステップ１０：routes/web.php の修正
 ```
+```
+ステップ1：resourcesテーブルに
+time_slot_minutesカラムを追加
+（マイグレーション）
+
+ステップ2：Resourceモデルに
+time_slot_minutesを追加
+
+ステップ3：管理画面のリソース追加・編集画面に
+時間刻みの入力欄を追加
+
+ステップ4：AdminControllerの
+storeResource・updateResourceに
+time_slot_minutesを追加
+
+ステップ5：ユーザーの予約フォームに
+時間刻みを反映した
+時間選択プルダウンを追加
+
+ステップ6：BookingControllerに
+時間刻みの検証を追加
+
+ステップ7：動作確認
+```
