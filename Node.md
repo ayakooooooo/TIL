@@ -843,3 +843,38 @@ app.listen(3000);
   <p>わんこの学びブログ</p>
 </header>
 ```
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BLOG</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/send_url.js"></script>
+  </head>
+  <body>
+    <%- include('header'); %>
+    <main>
+      <div class="article">
+        <% if (article.category === 'all') { %>
+          <h1><%= article.title %></h1>
+          <p><%= article.content %></p>
+        <% } %>
+        <% if (article.category === 'limited') { %>
+          <i>会員限定</i>
+          <h1><%= article.title %></h1>
+          <!-- ここから削除 -->
+          <p><%= article.content %></p>
+          <!-- ここまで -->
+                    
+          
+          
+        <% } %>
+      </div>
+    </main>
+    <footer>
+      <a class="btn sub" href="/list">一覧にもどる</a>
+    </footer>
+  </body>
+</html>
+```
