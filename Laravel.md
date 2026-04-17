@@ -6,12 +6,7 @@ composer create-project laravel/laravel laravel-form
 cd laravel-form
 
 ② DB設定（.env）
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=laravel_form
-DB_USERNAME=root
-DB_PASSWORD=
+
 
 
 DBを先に作っておきます（phpMyAdminなどでOK）
